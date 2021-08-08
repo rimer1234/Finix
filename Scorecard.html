@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    	<link rel="stylesheet" href="ScoreCard.css">
+    	<title>Finix - Scorecard</title>	
+	</head>
+	<body>
+		<div class="logo">
+			<a href="main.html"><img src="logo_small.png" alt="Home"></a>	
+		</div>
+		<div class="name">
+			<h1 id = "count">Lookup Scores For A Company</h1>
+		</div>
+		
+		<div class ="inpute">
+			<input type="text" id="Ticker" style = 'text-transform:uppercase'>
+			<button onclick="getTextBox()">Get Scorecard!</button>
+		</div>
+		
+		<div class="row1">
+		  <div class="main card" onclick="CardClick()">
+		     <h3 id = "T"></h3>
+		      <p id = "Name"></p>
+		      <p id = "Sector"></p>
+		    </div>
+	
+		</div>
+		
+		<div class="row">
+		<div class="column">
+		   <div class="card1 card" id="c1">
+		     <h3 id = "T1">Overall Score</h3>
+		      <p id = "Name1"></p>
+		    </div>
+		</div>
+			
+		<div class="column">
+			<div class="card2 card" id= "c2">
+				<h3 id = "T2">Environmental Score</h3>
+			    <p id = "Name2"></p>
+			</div>
+		</div>
+		  
+		<div class="column">
+			<div class="card3 card" id = "c3">
+				<h3 id = "T3">Social Score</h3>
+			    <p id = "Name3"></p>
+			</div>
+		</div>
+			  
+		<div class="column">
+		   <div class="card4 card" id = "c4">
+		      <h3 id = "T4">Corporate Governance Score</h3>
+		      <p id = "Name4"></p>
+		   </div>
+		</div>
+		</div>
+		
+		</div>
+		
+	 <table class = "legend" id = "legend" border="0">
+		<tr>
+		<td style="background-color:green" width="200px" height="40px"> > 90 : Best Impact</td>
+		<td style="background-color:yellow" width="200px" height="40px"> 81 - 90 : Good Impact</td>
+		<td style="background-color:Orange" width="200px" height="40px"> 61 - 80 : Medium Impact</td>
+		<td style="background-color:Red" width="200px" height="40px"> <= 60 : Low Impact</td>
+		</tr>
+		</table>
+		
+	<script src="data.js"></script>	
+	<script src="ScoreCard.js"></script>
+	</body>
+</html>

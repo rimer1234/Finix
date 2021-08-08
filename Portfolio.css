@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:aliceblue;
+}
+
+.logo {
+	display: flex;
+justify-content:left;
+position:absolute;
+}
+
+.name{
+	display: flex;
+	justify-content: center; 
+	font-family: 'Bungee Shade', cursive;
+	font-size:20px;
+	color:navy;
+}
+
+.scores{
+	display: flex;
+	justify-content: center; 
+	font-family: 'Bungee Shade', cursive;
+	font-size:12px;
+		color:navy;
+}
+
+.inpute{
+	display: flex;
+	justify-content: center; 
+    align-items:center;
+	height:150px;
+ }
+
+input, button{
+	margin:10px;
+}
+
+
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 25%;
+    padding: 8px;
+  }
+  
+  /* Remove extra left and right margins, due to padding */
+  .row {margin: 10px;}
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Style the counter cards */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    height:150px;
+  }
+  
+  
+  button{
+      border: 0px;
+      border-radius:4px;
+      background: lightskyblue;
+      width:150px;
+      height:60px;
+      margin:10px;
+      font-size:15px;
+  }
+
+  .holding{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    background-color: #b3ffff;
+    height:200px;
+    width: 80%;
+    margin-left:10%
+  }
+  
+  .legend{
+  	margin-top:20px;
+  margin-left:35%
+  }
+
+td{
+padding-left:20px;
+}
+
+
+.header{    
+	font-family: 'Bungee Shade', cursive;	
+    font-size:20px;
+    font-weight:bold;
+    align-self:flex-start;
+    	color:navy;
+}

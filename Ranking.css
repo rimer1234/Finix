@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+body {
+    
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+    margin: 0;
+    background-color:aliceblue;
+}
+
+.name{
+	display: flex;
+	justify-content: center; 
+	font-family: 'Bungee Shade', cursive;
+	font-size:30px;
+	color:navy;
+}
+
+.logo {
+display: flex;
+justify-content:left;
+position:absolute;
+align-items: left;
+  left: 10px;
+  top: 10px;
+}
+
+
+h1{
+	font-size:40px;
+	margin:50px;
+	font-weight:Bold;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width:20%;
+  padding: 0 10px;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: yellow;
+  margin:30px;
+  width:200px;
+  height:200px;
+  cursor:pointer;
+}
+
+.card1{
+	background-image:linear-gradient(to right, mistyrose, pink);
+}
+
+.card2{
+	background-image:linear-gradient(to right, lightblue, deepskyblue);
+}
+
+.card3{
+	background-image:linear-gradient(to right, lightgreen, green);
+}
+
+.card4{
+	background-image:linear-gradient(to right, ivory, lemonchiffon);
+}
+
+.card5{
+	background-image:linear-gradient(to right, lightcyan, cyan);
+}
+
+.card6{
+	background-image:linear-gradient(to right, lavender, lavenderblush);
+}
+
+.card7{
+	background-image:linear-gradient(to right, honeydew, lightgreen);
+}
+
+.card8{
+	background-image:linear-gradient(to right, wheat, tan);
+}
+
+.card9{
+	background-image:linear-gradient(to right, pink, plum);
+}
+
+.card10{
+	background-image:linear-gradient(to right, coral, crimson);
+}
+
+button{
+    border: 0px;
+    border-radius:4px;
+    background: lightskyblue;
+    width:100px;
+    height:150px;
+    cursor:pointer;
+    color:white;
+    margin:10px;
+    font-weight:bold;
+}
+
+
+button:focus { outline: none;}
+button:hover {background: rgba(0,0,0,0.3);}

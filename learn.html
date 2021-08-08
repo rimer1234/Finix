@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<title>Finix - Learn</title>
+	</head>
+
+	<body>
+		<div class="logo">
+			<a href="main.html"><img src="logo_small.png" alt="Home"></a>	
+		</div>
+		<div class="name">
+		<h1>Learn Socially Responsible Investing</h1>
+		</div>
+		<div class="bar" id = "bar">
+			<div class=" quiz" id = "done"> 0% </div>
+		</div>
+		<div class="pic">
+			<img src="Owl.png" alt="Owl" height="500vh">
+		</div>
+		<div class="container">
+			<div class="card card0 card0-top">
+				<dl>
+					<dt class="dt-heading">Welcome to SRI Mini Quiz!</dt>
+					<dd>Take a quiz to check your knowledge on Socially Resonsible Investing. </dd>	
+					<dd>Select the tile with your answer choice.</dd>	
+					<dd>The status bar will indicate your quiz progress.</dd>	
+					<dd>The score will be displayed at the end of the quiz.</dd>	
+					<dd>You must select an answer to each question before moving to the next.</dd>
+					<dd>Chat with our chatbot to learn more about Socially Responsible Investing.</dd>	
+				</dl>
+            	<button onclick="startquiz()">Start Quiz</button>
+			</div>
+
+			<div class="card card1 card1-back">
+				<dl>
+					<dt class="dt-heading">What factors motivate SRI investors?</dt>
+				</dl>
+                <button id = "q1_a4" class="choice" onclick="q1_change_colors()">Values</button>
+                <button id = "q1_a2" class="choice" onclick="q1_change_colors()">Impact</button>
+                <button id = "q1_a3" class="choice" onclick="q1_change_colors()">Performance</button>
+                <button id = "q1_a1" class="choice" onclick="q1_correct()">All of the above</button>
+				<button onclick="button1()">Next</button>
+			</div>
+
+			<div class="card card2 card2-back">
+				<dl>
+					<dt class="dt-heading">FedEx aims to convert its entire 35,000-vehicle fleet to electric or hybrid engines. This example of ESG value creation results in: <dt>
+				</dl>
+                <button id = "q2_a1" class="choice" onclick="q2_change_colors()">Growing revenue</button>
+                <button id = "q2_a2" class="choice" onclick="q2_correct()">Reducing costs</button>
+                <button id = "q2_a3" class="choice" onclick="q2_change_colors()">Increasing productivity</button>
+                <button id = "q2_a4" class="choice" onclick="q2_change_colors()">Optimizing investment</button>
+				<button onclick="button2()">Next</button>
+			</div>
+
+			<div class="card card3 card3-back">
+				<dl>
+					<dt class="dt-heading"> Who are SRI investors?</dt>
+				</dl>
+                <button id = "q3_a1" class="choice" onclick="q3_change_colors()">Mission-driven organizations</button>
+                <button id = "q3_a2" class="choice" onclick="q3_change_colors()">Faith-based organizations</button>
+                <button id = "q3_a4" class="choice" onclick="q3_change_colors()">Millennial investors</button>
+                <button id = "q3_a3" class="choice" onclick="q3_correct()">All of the above</button>
+				<button onclick="button3()">Next</button>
+			</div>
+
+			<div class="card card4 card4-back">
+				<dl>
+					<dt class="dt-heading">Unilever developed Sunlight, a brand of dishwashing liquid that used much less water than its other brands, sales of Sunlight outpace category growth by more than 20 percent in a number of water-scarce markets. This example of ESG value creation results in: </dt>
+				</dl>
+                <button id = "q4_a1" class="choice" onclick="q4_correct()">Growing revenue</button>
+                <button id = "q4_a2" class="choice" onclick="q4_change_colors()">Reducing costs</button>
+                <button id = "q4_a3" class="choice" onclick="q4_change_colors()">Increasing productivity</button>
+                <button id = "q4_a4" class="choice" onclick="q4_change_colors()">Optimizing investment</button>
+				<button onclick="button4()">Next</button>
+			</div>
+
+            <div class="card card5 card5-back">
+				<dl>
+					<dt class="dt-heading">In 2020 the number of ESG funds that investors could choose from grew by 30% from 2019 and nearly a four fold increase from a decade ago. How many ESG focused funds were available to choose from in 2020?</dt>
+				</dl>
+                <button id = "q5_a4" class="choice" onclick="q5_change_colors()">100</button>
+                <button id = "q5_a2" class="choice" onclick="q5_change_colors()">200</button>
+                <button id = "q5_a3" class="choice" onclick="q5_change_colors()">300</button>
+                <button id = "q5_a1" class="choice" onclick="q5_correct()">400</button>
+				<button onclick="button5()">Next</button>
+			</div>
+
+			<div class="card card6 card6-back">
+				<dl>
+					<dt class="dt-heading">Congrats! You completed the quiz!</dt>
+					<dd id ="score">Score</dd>		
+					<dd>Chat with our chatbot to learn more about Socially Responsible Investing.</dd>	
+				</dl>
+				<button onclick="button6()">Home</button>
+			</div>
+
+		</div>
+		<script src="script.js"></script>
+
+		<script>
+		  window.watsonAssistantChatOptions = {
+		      integrationID: "b7253da3-231b-41e1-aab4-b8386997824d", // The ID of this integration.
+		      region: "us-east", // The region your integration is hosted in.
+		      serviceInstanceID: "74cd3fc0-70df-4586-8572-7a5591c4b68b", // The ID of your service instance.
+		      
+		      openChatByDefault: true,
+		      onLoad: function(instance) { instance.render(); }
+		    };
+		  setTimeout(function(){
+		    const t=document.createElement('script');
+		    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+		    document.head.appendChild(t);
+		  });
+		</script>
+		
+	
+
+	</body>
+
+</html>

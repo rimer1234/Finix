@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+html, body { 
+	  height: 100%;
+	  background-color: AliceBlue;
+}
+
+.logo {
+	display: flex;
+	justify-content:flex-start;
+	position:absolute;
+}
+
+.name {
+	display: flex;
+	justify-content: center;
+	font-family: 'Bungee Shade', cursive;
+	font-size:20px;
+  color:navy;
+}
+
+.hint {
+	display: flex;
+	justify-content: center;
+	font-family: 'Dancing Script', cursive;
+	font-size:20px;
+	color:DarkBlue;
+}
+
+.container {
+  display: flex; 
+  flex-direction:column;
+  align-items: center;
+  background-color: AliceBlue;
+ }
+
+button {
+  border: 0px;
+  background: lightskyblue;
+  border-radius: 2px;
+  color: rgba(0,0,0,0.8);
+  padding: 4px;
+  cursor: pointer;
+  width: 200px;
+  height:50px;
+  margin:1%;
+  font-size:20px;
+}
+
+button:focus { outline: none;}
+button:hover {background: rgba(0,0,0,0.3);}
